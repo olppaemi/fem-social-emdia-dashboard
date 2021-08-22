@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { darkTheme, GlobalStyle, lightTheme } from "globalStyles";
+import React, { useEffect, useState } from "react";
+import FollowerInfo from "sections/FollowersInfo/index";
+import Header from "sections/Header/index";
+import Overview from "sections/Overview/index";
+import styled, { ThemeProvider } from "styled-components";
 
-function App() {
+const Container = styled.div`
+  max-width: 1110px;
+  margin: 0 auto;
+`;
+
+const App = () => {
+  const [theme, setTheme] = useState(darkTheme);
+  const [checked, setChecked] = useState(false);
+
+  useEffect(() => {
+    if (checked) {
+      setTheme(lightTheme);
+    } else {
+      setTheme(darkTheme);
+    }
+  }, [checked]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <GlobalStyle />
+        <Header checked={checked} setChecked={setChecked} />
+        <FollowerInfo />
+        <Overview />
+      </Container>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
