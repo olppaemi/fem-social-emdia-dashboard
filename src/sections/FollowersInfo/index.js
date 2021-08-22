@@ -16,6 +16,7 @@ export const CardsContainer = styled.div`
 
   @media only Screen and (max-width: ${rem(768)}) {
     grid-template-columns: 1fr;
+    gap: ${rem(24)};
   }
 `;
 

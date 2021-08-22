@@ -12,17 +12,24 @@ export const CardContainer = styled.div`
   & > * + * {
     margin-top: ${rem(24)};
   }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.hover};
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
-export const Title = styled.p`
+export const Title = styled.strong`
   color: ${({ theme }) => theme.text1};
+  font-weight: 700;
 `;
-export const Counter = styled.div`
+export const Counter = styled.strong`
   color: ${({ theme }) => theme.text2};
+  font-size: ${rem(32)};
+  font-weight: 700;
 `;
 export const Change = styled.div`
   color: ${({ minus, theme }) => (minus ? theme.red : theme.green)};

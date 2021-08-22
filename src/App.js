@@ -18,6 +18,10 @@ const Container = styled.div`
   @media only Screen and (max-width: ${rem(768)}) {
     max-width: ${rem(425)};
   }
+
+  @media only Screen and (max-width: ${rem(425)}) {
+    max-width: ${rem(325)};
+  }
 `;
 
 const App = () => {

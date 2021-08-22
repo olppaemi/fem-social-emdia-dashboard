@@ -11,13 +11,22 @@ export const CardContainer = styled.div`
         return theme.facebook;
       } else if (site === "twitter") {
         return theme.twitter;
-      } else if (site === "instagram") {
-        return theme.instagram;
       } else if (site === "youtube") {
         return theme.youtube;
       }
     }};
+
+  border-image: ${({ site, theme }) => {
+    if (site === "instagram") {
+      return theme.instagram;
+    }
+  }};
+  border-image-slice: 1;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.hover};
+  }
 `;
 export const CardHeader = styled.div`
   display: flex;

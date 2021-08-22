@@ -1,3 +1,4 @@
+import rem from "services/rem";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -11,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: ${rem(14)};
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -44,6 +45,7 @@ export const darkTheme = {
   text1: "hsl(228, 34%, 66%)",
   text2: "hsl(0, 0%, 100%)",
   toggle: "linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))",
+  hover: "hsla(228, 26%, 27%, 1)",
   ...priamry,
 };
 
@@ -54,5 +56,6 @@ export const lightTheme = {
   text1: "hsl(228, 12%, 44%)",
   text2: "hsl(230, 17%, 14%)",
   toggle: "hsl(230, 22%, 74%)",
+  hover: "hsla(232, 33%, 91%, 1)",
   ...priamry,
 };

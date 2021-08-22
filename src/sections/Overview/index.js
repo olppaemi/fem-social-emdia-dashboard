@@ -7,6 +7,7 @@ import OverviewCard from "components/OverviewCard/index";
 const OverviewContainer = styled.div`
   h1 {
     color: ${({ theme }) => theme.text2};
+    margin-bottom: ${rem(24)};
   }
   margin-bottom: ${rem(48)};
 `;
@@ -14,6 +15,15 @@ const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: ${rem(30)};
+
+  @media only Screen and (max-width: ${rem(1024)}) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only Screen and (max-width: ${rem(768)}) {
+    grid-template-columns: 1fr;
+    gap: ${rem(16)};
+  }
 `;
 
 const Overview = () => {
