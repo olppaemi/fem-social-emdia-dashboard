@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="/screenshots/desktop.jpg" height="400">
-<img src="/screenshots/mobile.jpg" weight="400">
+<img src="/screenshots/desktop.jpg" height="300">
+<img src="/screenshots/mobile.jpg" width="300">
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/social-media-dashboard-using-react-and-styled-components-YVgHQqilB)
+- Live Site URL: [Live site URL](https://fem-social-media-dashboard-ivory.vercel.app/)
 
 ## My process
 
