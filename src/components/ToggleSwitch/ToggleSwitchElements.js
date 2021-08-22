@@ -1,11 +1,25 @@
+import rem from "services/rem";
 import styled from "styled-components";
 
-const rem = (px) => `${px / 16}rem`;
+export const ToggleSwitchContainer = styled.div`
+  color: ${({ theme }) => theme.text2};
+
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  @media only Screen and (max-width: ${rem(768)}) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: ${rem(20)};
+  }
+`;
 
 export const Label = styled.label`
   position: relative;
-  color: ${({ theme }) => theme.text2};
-  font-weight: 700;
+  cursor: pointer;
 
   &:after {
     display: inline-block;
@@ -15,6 +29,10 @@ export const Label = styled.label`
     border-radius: ${rem(32)};
     background: ${({ theme }) => theme.toggle};
     transform: translateY(${rem(6)});
+
+    @media only Screen and (max-width: ${rem(768)}) {
+      transform: translateY(${rem(-5)});
+    }
   }
 
   &:before {
@@ -25,17 +43,9 @@ export const Label = styled.label`
     background: ${({ theme }) => theme.topBgPattern};
     border-radius: 50%;
     position: absolute;
-    top: -10%;
-    left: ${({ checked }) => (checked ? "82%" : "65%")};
+    top: -11%;
+    left: ${({ checked }) => (checked ? "60%" : "20%")};
     z-index: 5;
     transition: all 200ms ease-in-out;
-  }
-`;
-
-export const ToggleSwitchContainer = styled.div`
-  input {
-    width: 0;
-    height: 0;
-    opacity: 0;
   }
 `;

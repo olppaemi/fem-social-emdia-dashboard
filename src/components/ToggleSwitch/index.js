@@ -4,8 +4,8 @@ import { Label, ToggleSwitchContainer } from "./ToggleSwitchElements";
 const ToggleSwitch = ({ checked, setChecked }) => {
   return (
     <ToggleSwitchContainer>
+      <strong>Dark Mode</strong>
       <Label htmlFor="toggle" checked={checked}>
-        Dark Mode
         <input
           type="checkbox"
           name="toggle"

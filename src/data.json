@@ -1,0 +1,87 @@
+{
+  "followersInfo": [
+    {
+      "site": "facebook",
+      "id": "@nathanf",
+      "followers": "1987",
+      "today": 12
+    },
+    {
+      "site": "twitter",
+      "id": "@nathanf",
+      "followers": "1044",
+      "today": 99
+    },
+    {
+      "site": "instagram",
+      "id": "@realnathanf",
+      "followers": "11k",
+      "today": 1099
+    },
+    {
+      "site": "youtube",
+      "id": "Nathan F.",
+      "followers": "8239",
+      "today": -144
+    }
+  ],
+
+  "overview": [
+    {
+      "id": 1,
+      "title": "Page Views",
+      "site": "facebook",
+      "count": "87",
+      "change": 3
+    },
+    {
+      "id": 2,
+      "title": "Likes",
+      "site": "facebook",
+      "count": "52",
+      "change": -2
+    },
+    {
+      "id": 3,
+      "title": "Likes",
+      "site": "instagram",
+      "count": "5462",
+      "change": 2257
+    },
+    {
+      "id": 4,
+      "title": "Profile Views",
+      "site": "instagram",
+      "count": "52k",
+      "change": 1375
+    },
+    {
+      "id": 5,
+      "title": "Retweets",
+      "site": "twitter",
+      "count": "117",
+      "change": 303
+    },
+    {
+      "id": 6,
+      "title": "Likes",
+      "site": "twitter",
+      "count": "507",
+      "change": 553
+    },
+    {
+      "id": 7,
+      "title": "Likes",
+      "site": "youtube",
+      "count": "107",
+      "change": -19
+    },
+    {
+      "id": 8,
+      "title": "Total Views",
+      "site": "youtube",
+      "count": "1407",
+      "change": -12
+    }
+  ]
+}
